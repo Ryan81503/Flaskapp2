@@ -9,7 +9,7 @@ def readDetails(filepath):
 @app.route("/")
 def homepage():
   name = "Ryan Rodriguez"
-  details = readDetails('Static/details.txt')
+  details = readDetails('static/details.txt')
   return render_template("homepage.html", name=name, aboutMe = details)
 
 @app.route('/greet/<name>')
